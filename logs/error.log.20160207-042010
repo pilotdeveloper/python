@@ -1,0 +1,2 @@
+[Sat Feb 06 22:20:10.353333 2016] [mpm_prefork:notice] [pid 6275] AH00163: Apache/2.4.12 (Ubuntu) mod_wsgi/4.3.0 Python/2.7.10 configured -- resuming normal operations
+[Sat Feb 06 22:20:10.353367 2016] [core:notice] [pid 6275] AH00094: Command line: '/usr/sbin/apache2'
