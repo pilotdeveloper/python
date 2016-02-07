@@ -1,3 +1,0 @@
-[Sat Feb 06 22:13:34.101788 2016] [mpm_prefork:notice] [pid 5850] AH00163: Apache/2.4.12 (Ubuntu) mod_wsgi/4.3.0 Python/2.7.10 configured -- resuming normal operations
-[Sat Feb 06 22:13:34.101823 2016] [core:notice] [pid 5850] AH00094: Command line: '/usr/sbin/apache2'
-[Sun Feb 07 04:13:34.812640 2016] [wsgi:error] [pid 5857] Not Found: /
