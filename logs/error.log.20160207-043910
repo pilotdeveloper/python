@@ -1,0 +1,59 @@
+[Sun Feb 07 04:39:11.490832 2016] [wsgi:error] [pid 6602] Internal Server Error: /admin/login/
+[Sun Feb 07 04:39:11.490854 2016] [wsgi:error] [pid 6602] Traceback (most recent call last):
+[Sun Feb 07 04:39:11.490856 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+[Sun Feb 07 04:39:11.490858 2016] [wsgi:error] [pid 6602]     response = self.process_exception_by_middleware(e, request)
+[Sun Feb 07 04:39:11.490859 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+[Sun Feb 07 04:39:11.490860 2016] [wsgi:error] [pid 6602]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Sun Feb 07 04:39:11.490862 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+[Sun Feb 07 04:39:11.490863 2016] [wsgi:error] [pid 6602]     response = view_func(request, *args, **kwargs)
+[Sun Feb 07 04:39:11.490864 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 413, in login
+[Sun Feb 07 04:39:11.490865 2016] [wsgi:error] [pid 6602]     return login(request, **defaults)
+[Sun Feb 07 04:39:11.490866 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/contrib/auth/views.py", line 49, in inner
+[Sun Feb 07 04:39:11.490871 2016] [wsgi:error] [pid 6602]     return func(*args, **kwargs)
+[Sun Feb 07 04:39:11.490872 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+[Sun Feb 07 04:39:11.490873 2016] [wsgi:error] [pid 6602]     return view(request, *args, **kwargs)
+[Sun Feb 07 04:39:11.490874 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+[Sun Feb 07 04:39:11.490876 2016] [wsgi:error] [pid 6602]     response = view_func(request, *args, **kwargs)
+[Sun Feb 07 04:39:11.490877 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+[Sun Feb 07 04:39:11.490878 2016] [wsgi:error] [pid 6602]     response = view_func(request, *args, **kwargs)
+[Sun Feb 07 04:39:11.490879 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/contrib/auth/views.py", line 69, in login
+[Sun Feb 07 04:39:11.490881 2016] [wsgi:error] [pid 6602]     if form.is_valid():
+[Sun Feb 07 04:39:11.490882 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/forms/forms.py", line 161, in is_valid
+[Sun Feb 07 04:39:11.490883 2016] [wsgi:error] [pid 6602]     return self.is_bound and not self.errors
+[Sun Feb 07 04:39:11.490884 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/forms/forms.py", line 153, in errors
+[Sun Feb 07 04:39:11.490885 2016] [wsgi:error] [pid 6602]     self.full_clean()
+[Sun Feb 07 04:39:11.490886 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/forms/forms.py", line 363, in full_clean
+[Sun Feb 07 04:39:11.490887 2016] [wsgi:error] [pid 6602]     self._clean_form()
+[Sun Feb 07 04:39:11.490888 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/forms/forms.py", line 390, in _clean_form
+[Sun Feb 07 04:39:11.490889 2016] [wsgi:error] [pid 6602]     cleaned_data = self.clean()
+[Sun Feb 07 04:39:11.490891 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/contrib/auth/forms.py", line 159, in clean
+[Sun Feb 07 04:39:11.490892 2016] [wsgi:error] [pid 6602]     password=password)
+[Sun Feb 07 04:39:11.490893 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 74, in authenticate
+[Sun Feb 07 04:39:11.490896 2016] [wsgi:error] [pid 6602]     user = backend.authenticate(**credentials)
+[Sun Feb 07 04:39:11.490897 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/contrib/auth/backends.py", line 17, in authenticate
+[Sun Feb 07 04:39:11.490899 2016] [wsgi:error] [pid 6602]     user = UserModel._default_manager.get_by_natural_key(username)
+[Sun Feb 07 04:39:11.490900 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/contrib/auth/base_user.py", line 45, in get_by_natural_key
+[Sun Feb 07 04:39:11.490901 2016] [wsgi:error] [pid 6602]     return self.get(**{self.model.USERNAME_FIELD: username})
+[Sun Feb 07 04:39:11.490902 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+[Sun Feb 07 04:39:11.490904 2016] [wsgi:error] [pid 6602]     return getattr(self.get_queryset(), name)(*args, **kwargs)
+[Sun Feb 07 04:39:11.490905 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/db/models/query.py", line 381, in get
+[Sun Feb 07 04:39:11.490906 2016] [wsgi:error] [pid 6602]     num = len(clone)
+[Sun Feb 07 04:39:11.490907 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/db/models/query.py", line 240, in __len__
+[Sun Feb 07 04:39:11.490908 2016] [wsgi:error] [pid 6602]     self._fetch_all()
+[Sun Feb 07 04:39:11.490909 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1074, in _fetch_all
+[Sun Feb 07 04:39:11.490911 2016] [wsgi:error] [pid 6602]     self._result_cache = list(self.iterator())
+[Sun Feb 07 04:39:11.490912 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/db/models/query.py", line 52, in __iter__
+[Sun Feb 07 04:39:11.490913 2016] [wsgi:error] [pid 6602]     results = compiler.execute_sql()
+[Sun Feb 07 04:39:11.490914 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 848, in execute_sql
+[Sun Feb 07 04:39:11.490915 2016] [wsgi:error] [pid 6602]     cursor.execute(sql, params)
+[Sun Feb 07 04:39:11.490916 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+[Sun Feb 07 04:39:11.490918 2016] [wsgi:error] [pid 6602]     return super(CursorDebugWrapper, self).execute(sql, params)
+[Sun Feb 07 04:39:11.490919 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+[Sun Feb 07 04:39:11.490920 2016] [wsgi:error] [pid 6602]     return self.cursor.execute(sql, params)
+[Sun Feb 07 04:39:11.490921 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+[Sun Feb 07 04:39:11.490922 2016] [wsgi:error] [pid 6602]     six.reraise(dj_exc_type, dj_exc_value, traceback)
+[Sun Feb 07 04:39:11.490923 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+[Sun Feb 07 04:39:11.490925 2016] [wsgi:error] [pid 6602]     return self.cursor.execute(sql, params)
+[Sun Feb 07 04:39:11.490926 2016] [wsgi:error] [pid 6602]   File "/var/www/python/home_data/venv/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 323, in execute
+[Sun Feb 07 04:39:11.490939 2016] [wsgi:error] [pid 6602]     return Database.Cursor.execute(self, query, params)
+[Sun Feb 07 04:39:11.490940 2016] [wsgi:error] [pid 6602] OperationalError: no such table: auth_user
